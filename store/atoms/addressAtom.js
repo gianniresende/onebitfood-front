@@ -1,8 +1,8 @@
 import { atom } from 'recoil';
-import { recoilPersist } from 'recoil-persist'
-​
+import { recoilPersist } from 'recoil-persist';
+
 const { persistAtom } = recoilPersist()
-​
+
 const addressState = atom({
  key: 'addressState',
  default: {
@@ -14,5 +14,5 @@ const addressState = atom({
   },
  effects_UNSTABLE: [persistAtom]
 });
-​
+
 export default addressState;
