@@ -31,7 +31,7 @@ export default function Details(props) {
               </Col>
               <Col >
                 <span className='text-custom-orange'>
-                  <FaStar/> 5
+                  <FaStar/> {props.review}
                 </span>
               </Col>
             </Row>
